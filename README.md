@@ -11,21 +11,19 @@
 
 # PASO DE INSTALACIÓN
 
-# - git clone https://github.com/tu-usuario/poke-rn.git
-
-# -cd poke-rn
+- git clone https://github.com/tu-usuario/poke-rn.git
+- cd poke-rn
 
 # INSTALACIÓN DE DEPENDENCIAS -
 
-# yarn install
+- yarn install
 
 # EJECUTOR
 
-# - yarn android
+- yarn android
+- yarn ios
 
-# - yarn ios
-
-Notas adicionales y decisiones técnicas relevantes
+# Notas adicionales y decisiones técnicas relevantes
 
 Durante el desarrollo del proyecto se presentaron varios problemas relacionados con las versiones de dependencias y herramientas. Estos fueron los más relevantes:
 
