@@ -1,7 +1,5 @@
 # poke-rn
 
-# Poke-api
-
 - POKE-RN POKE-RN es una aplicación móvil desarrollada con **React Native** y **TypeScript** que permite explorar datos de Pokémon consumiendo la [PokéAPI](https://pokeapi.co/).
 - El proyecto está diseñado con una arquitectura modular y escalable, integrando servicios, hooks y tipado robusto.
 - Características principales - Consumo de múltiples endpoints de la PokéAPI para mostrar información detallada de cada Pokémon. - Arquitectura organizada en **services**, **hooks**, **screens** y **types**.
