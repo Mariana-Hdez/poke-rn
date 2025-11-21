@@ -25,6 +25,8 @@
 
 # Notas adicionales y decisiones técnicas relevantes
 
+** Aunque no tenía experiencia previa en aplicaciones desarrolladas con React Native y TypeScript, procuré integrar lo solicitado de la mejor manera posible. Para lograrlo, me apoyé en documentación oficial, tutoriales en video y herramientas de inteligencia artificial, lo que me permitió comprender un poco más la lógica detrás de este proceso práctico. **
+
 Durante el desarrollo del proyecto se presentaron varios problemas relacionados con las versiones de dependencias y herramientas. Estos fueron los más relevantes:
 
 React vs React Native
