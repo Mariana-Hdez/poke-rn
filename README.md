@@ -11,7 +11,7 @@
 
 # PASO DE INSTALACIÓN
 
-- git clone https://github.com/tu-usuario/poke-rn.git
+- git clone [https://github.com/tu-usuario/poke-rn.git](https://github.com/Mariana-Hdez/poke-rn.git)
 - cd poke-rn
 
 # INSTALACIÓN DE DEPENDENCIAS -
