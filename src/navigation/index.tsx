@@ -6,14 +6,15 @@ import HomeScreen from "@/screens/Home";
 import DetailScreen from "@/screens/Detail";
 
 export type RootStackParamList = {
-  Home: undefined;
-  Detail: { name: string };
+  Home: undefined; // La pantalla Home no recibe parámetros
+  Detail: { name: string }; // La pantalla Detail recibe el nombre del Pokémon
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function AppNavigator() {
   return (
+    // NavigationContainer envuelve toda la navegación de la aplicación
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen
@@ -21,6 +22,7 @@ export default function AppNavigator() {
           component={HomeScreen}
           options={{ title: "Pokédex" }}
         />
+        {/* Pantalla Detail: muestra información detallada de un Pokémon */}
         <Stack.Screen
           name="Detail"
           component={DetailScreen}

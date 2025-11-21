@@ -4,12 +4,16 @@ import type { PokemonDetail } from "@/types/pokemon";
 import styles from "./styles";
 import { useFavorites } from "@/store/favorites";
 
+// Props que recibe el componente:
+//  pokemon: objeto con los detalles del Pokémon (puede ser undefined)
+//  isLoading: booleano que indica si los datos están cargando
 type Props = {
   pokemon?: PokemonDetail;
   isLoading: boolean;
 };
 
 const DetailLayout: React.FC<Props> = ({ pokemon, isLoading }) => {
+  // Hook de favoritos: provee funciones para alternar y verificar si un Pokémon está en favoritos
   const { toggleFavorite, isFavorite } = useFavorites();
 
   if (isLoading) return <ActivityIndicator style={{ flex: 1 }} />;
@@ -35,7 +39,7 @@ const DetailLayout: React.FC<Props> = ({ pokemon, isLoading }) => {
         Habilidades: {pokemon.abilities.map((a) => a.ability.name).join(", ")}
       </Text>
 
-      {/* ⭐ Botón de favoritos */}
+      {/* Botón de favoritos */}
       <Text
         style={{ marginVertical: 12, fontSize: 18 }}
         onPress={() => toggleFavorite(pokemon)}
